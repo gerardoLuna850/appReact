@@ -7,22 +7,22 @@ class Login extends Component {
 
     render(){
       //variable para navegar usada en el onpress
-      //const navigation = this.props.navigation;
+      const navigation = this.props.navigation;
   return (
       <>
        <Container>
         <Content padder contentContainerStyle = {misEstilos.content}>
           <Card>
             <CardItem header bordered>
-              <Text style = {misEstilos.textCenter} >Bienvenidp</Text>
+              <Text style = {misEstilos.textCenter} >Bienvenido</Text>
             </CardItem>
             <CardItem bordered>
               <Body style = {misEstilos.body}>
                   
                   <View>
                       {/* Variabled que traemos de la pantalla anterior*/}
-                  <Text >Usuario: {this.props.route.params.usuario}</Text>
-                  <Text >{this.props.route.params.pass}</Text>
+                  <Text style = {misEstilos.tc}>Usuario: {this.props.route.params.usuario}</Text>
+                  <Text style = {misEstilos.tc}>Contraseña:{this.props.route.params.pass}</Text>
                   </View>
                     
                 
@@ -30,10 +30,11 @@ class Login extends Component {
               </Body>
             </CardItem>
             <CardItem footer bordered style = { misEstilos.pie}>
-            </CardItem>
-            <CardItem footer bordered style = { misEstilos.pie}>
-            </CardItem>
+            <Button  onPress={() => navigation.navigate('Principal')} primary style = { misEstilos.centrar}><Text> Ver Peliculas </Text></Button>
+            <Button  onPress={() => navigation.navigate('OtrasP')} primary style = { misEstilos.centrar}><Text> Ver Pokemones </Text></Button>
 
+            </CardItem>
+            
           </Card>
         </Content>
       </Container> 
@@ -67,6 +68,12 @@ const misEstilos = StyleSheet.create({
 
   body: {
     paddingVertical: 35,
+  },
+  tc: {
+    textAlign: 'center',
+    width: '100%',
+    justifyContent: 'center'
+
   }
 });
 
