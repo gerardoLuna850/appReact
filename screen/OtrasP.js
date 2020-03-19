@@ -1,7 +1,7 @@
 //Aqui va la otra API
 import React, {Component} from 'react';
 import { FlatList } from 'react-native-gesture-handler';
-import { styleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 class OtrasP extends Component{
     //generar los atributos
@@ -37,28 +37,25 @@ class OtrasP extends Component{
     render(){
         if(this.state.loading){
             return(
-                <View style={{flex: 1, paddingTop:50, paddingLeft:5}}>
-                    <FlatList
-                        data={this.state.pokemon}
-                        renderItem={
-                        ({Item}) => <Text>{ item.name  }</Text>
-                        }
-                        keyExtractor={(item, index) => index.toString()}
-                    />
+                <View style={{justifyContent:'center', alignItems:'center',flex:1}}>
+                    <Text>A ver que sale</Text>
                 </View>
             );  
         
     }
 
-    const styles = styleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    }); 
+    return(
+        <View style={{flex: 1, paddingTop:50, paddingLeft:5}}>
+            
+            <FlatList
+                data={this.state.pokemon}
+                renderItem={
+                ({item}) => <Text>{ item.name }</Text>
+                }
+                keyExtractor={(item, index) => index.toString()}
+            />
+        </View>
+    ); 
 
 }
 }

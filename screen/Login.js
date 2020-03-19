@@ -46,7 +46,7 @@ class Login extends Component {
 
 
             <CardItem footer bordered style = { misEstilos.pie}>
-            <Text>Ya tienes cuenta? Registrate</Text>
+            <Button  onPress={() => navigation.navigate('Registro')} primary style = { misEstilos.centrar}><Text> Registrarse </Text></Button>
             </CardItem>
 
           </Card>

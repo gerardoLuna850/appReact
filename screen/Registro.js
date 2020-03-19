@@ -21,10 +21,6 @@ class Registro extends Component {
                       <Icon type = 'FontAwesome' name = 'user-circle-o'></Icon>
                       <Input placeholder= 'Username'/>
                     </Item>
-                    <Item lineLabel>
-                        <Icon  type = 'FontAwesome' name = 'user-circle-o'></Icon> 
-                        <Input placeholder='Nombre'/>
-                    </Item>
                   
                   
                   
@@ -32,18 +28,12 @@ class Registro extends Component {
                     <Icon type = 'Entypo' name = 'email'></Icon>
                     <Input placeholder = 'Correo'/>
                   </Item>
-                  <Item lineLabel>
-                    <Icon type = 'MaterialCommunityIcons' name = 'cellphone'></Icon>
-                    <Input placeholder = 'Celular'/>
-                  </Item>
+
                   <Item lineLabel>
                     <Icon type = 'Ionicons' name = 'ios-lock'></Icon>
                     <Input placeholder = 'Constraseña'/>
                   </Item>
-                    <Item lineLabel>
-                        <Icon type = 'Ionicons' name = 'ios-lock'></Icon>
-                        <Input placeholder = 'Confirma contraseña'/>
-                    </Item>
+
 
               </Body>
             </CardItem>

@@ -24,7 +24,7 @@ const App: () => React$Node = () => {
         <Stack.Screen name="Registro" component={Registro} />
         <Stack.Screen name="detalles" component={detalles} />
         <Stack.Screen name="Principal" component={Principal} />
-        <Stack.Screen name="OtrasP" component={Principal} />
+        <Stack.Screen name="OtrasP" component={OtrasP} />
       </Stack.Navigator>
     </NavigationContainer>
   );
