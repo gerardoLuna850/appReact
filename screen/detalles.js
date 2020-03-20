@@ -31,7 +31,7 @@ class Login extends Component {
             </CardItem>
             <CardItem footer bordered style = { misEstilos.pie}>
             <Button  onPress={() => navigation.navigate('Principal')} primary style = { misEstilos.centrar}><Text> Ver Peliculas </Text></Button>
-            <Button  onPress={() => navigation.navigate('OtrasP')} primary style = { misEstilos.centrar}><Text> Ver Pokemones </Text></Button>
+            <Button  onPress={() => navigation.navigate('Apipoke')} primary style = { misEstilos.centrar}><Text> Ver Pokemones </Text></Button>
 
             </CardItem>
             

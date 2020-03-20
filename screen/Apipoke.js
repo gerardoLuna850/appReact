@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import { FlatList } from 'react-native-gesture-handler';
 import { StyleSheet, Text, View } from 'react-native';
 
-class OtrasP extends Component{
+class Apipoke extends Component{
     //generar los atributos
     constructor(props){
         super(props)
@@ -60,4 +60,4 @@ class OtrasP extends Component{
 }
 }
 
-export default  OtrasP;
+export default  Apipoke;
